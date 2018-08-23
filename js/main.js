@@ -61,13 +61,7 @@ function init()
 		
 	})
 	
-	.error( function(data2) { 
-	$("#cargando").html("");
-	$("#cargando").append("<p>Error al cargar. </p>"); 
-	$("#cargando").append("<p>Compruebe su conexion a internet.</p>"); 
-	$("#cargando").append("<button type='button' class='btn btn-success' onclick='init()'>Intertar de Nuevo</button>"); 
-	} )
-
+	
 
 	
 	}
