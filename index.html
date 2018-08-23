@@ -10,41 +10,13 @@
 		<link rel="stylesheet" type="text/css" href="jquery.mobile/icon-pack-custom.css">
 		<SCRIPT TYPE="text/javascript" src="jquery.mobile/jquery-1.7.2.min"></SCRIPT>
 		<SCRIPT TYPE="text/javascript" src="jquery.mobile/jquery.mobile-1.4.5.js"></SCRIPT>
-			<SCRIPT TYPE="text/javascript" src="js/phonegap-1.4.1.js"></SCRIPT>
+		<SCRIPT TYPE="text/javascript" src="js/phonegap-1.4.1.js"></SCRIPT>
 		<SCRIPT TYPE="text/javascript" src="js/jquery-2.0.3.js"></SCRIPT>
 		<SCRIPT TYPE="text/javascript" src="js/bootstrap.min.js"></SCRIPT>
-		<script type="text/javascript" src="cordova.js"></script> 
 		<script type="text/javascript" src="js/main.js"></script>	
-		
-       <script>
-		function twitter(){
-			appAvailability.check(
-				'com.twitter.android', // Package Name
-				function() {           // Success callback
-					navigator.startApp.start([["action", "VIEW"], ["twitter://user?screen_name=mediosprovincia"]]);
-				},
-				function() {           // Error callback
-				   window.open('https://www.twitter.com/mediosprovincia','_system','location=yes');
-				}
-			);
-	   
-		}
-	   function facebook(){
-			appAvailability.check(
-				'com.facebook.katana', // Package Name
-				function() {           // Success callback
-					navigator.startApp.start([["action", "VIEW"], ["fb://facewebmodal/f?href=https://www.facebook.com/c13mediosprovincia"]]);
-				},
-				function() {           // Error callback
-				   window.open('https://www.facebook.com/c13mediosprovincia','_system','location=yes');
-				}
-			);
-	   
-		}
-	
+		<script type="text/javascript" src="cordova.js"></script> 
 		
 		
-	   </script>
 		
     </head>
 	<body >
@@ -286,7 +258,7 @@ $("#secundarias").html("");
 			</div>
 		</div>
 		
-		<!------------Pagina Noticia Indivudual--------->
+		<!--Pagina Noticia Indivudual-->
 	<div data-role="page"   id="noticia1">
 	
 			
@@ -361,7 +333,7 @@ $("#secundarias").html("");
 			
 	</div>
 	
-	<!------------Pagina Contacto--------->
+	<!--Pagina Contacto-->
 	<div data-role="page" id="contacto">
 			
 			<div data-role="header"  data-id="fijo" data-position="fixed" class="ui-b" data-theme="b" style="  padding: 5px 0px 5px 0px;">	
