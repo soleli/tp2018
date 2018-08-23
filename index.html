@@ -14,7 +14,7 @@
 		<SCRIPT TYPE="text/javascript" src="js/jquery-2.0.3.js"></SCRIPT>
 		<SCRIPT TYPE="text/javascript" src="js/bootstrap.min.js"></SCRIPT>
 		<script type="text/javascript" src="js/main.js"></script>	
-		<script type="text/javascript" src="cordova.js"></script> 
+	
 		
 		
 		
@@ -51,12 +51,7 @@
 					
 			</div>
 			<div data-role="content" class="ui-fondo" data-theme="fondo">
-				<div id="cargando" class="cargando" ><img  src="img/load.gif" >
-				<p>Cargando...</p>
-				<p>Espere,por favor. </p>
 				
-				</div>
-				 
 				<div class="carusel">
 					<div id="myCarousel" class="carousel slide" data-ride="carousel">
 						<div class="carousel-inner" role="listbox">
@@ -70,11 +65,7 @@
 							<span class=" icon-right" aria-hidden="true"></span>
 							<span class="sr-only">Next</span>
 						</a>
-					</div><!-- /.carousel -->
-					<!--<a class="boton-mas" href="#tiempopopular" onclick="tiempopopular()" data-role="button" data-icon="plus" data-iconpos="left">
-					<p>Más Noticias en</p>
-						<img class="img-responsive" src="img/tiempo-popular.png">
-					</a>-->
+					</div>
 				</div>
 				<div class="opciones row">
 					<div class="col-xs-12"><p  class="titulo-seccion">Más noticias</p></div>
@@ -127,33 +118,10 @@
 			$(document).ready(function(){
 				init();
 	
-			alto=$( window ).height();
-			centro=alto/3;
-			centro2=centro;
-			$("#cargando").css("min-height",alto);
-			$("#cargando2").css("min-height",alto);
+			
 			$("#myCarousel").carousel({interval: 5000, pause: "hover"});
 			})
 			
-			function whatsapp(){
-			
-			cordova.plugins.Whatsapp.send("+5493804499197");
-			}
-			
-			function cargarview(){
-			$("#cargando").html("");
-	
-			$("#cargando").css("display","block");
-			$("#cargando").append("<img  src='img/load.gif'>"); 
-			$("#cargando").append("<p>Cargando...</p>"); 
-			$("#cargando").css("height","980px");
-			$("#cargando").css("background","rgba(7, 7, 7, 0.57)");
-			$("#cargando").css("padding-top","400px");
-			$("#cargando").css("font-size","25px");
-			
-			$("#cargando").css("color","white");
-			
-			}
 			
 			
 		</script>
